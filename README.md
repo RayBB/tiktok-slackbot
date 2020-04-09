@@ -55,3 +55,7 @@ Slack -> TikTok -> Twitter -> Slack
 ### Hosting  
 
 I recommend hosting for free on [glitch.com](https://glitch.com/). However, Google App Engine or even a Lambda function should work as well.
+
+## Contributing
+
+Feel free to open a PR or create an issue if you'd like to improve the project! 
