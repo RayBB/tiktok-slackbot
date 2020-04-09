@@ -41,7 +41,7 @@ Slack -> TikTok -> Twitter -> Slack
 
 ## Setup 
 
-`cp .env.sample .env` to make your `.env` file.
+`cp .env.sample .env` to make the `.env` file.
 
 1. Create a [Twitter developer account](https://developer.twitter.com/en/apply-for-access) and put the credentials to the `.env` file.
 2. Create a Slackbot (follow instructions in src/slackbot.js) and put the credentials in the `.env` file.  
