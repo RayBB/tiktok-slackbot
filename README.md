@@ -11,7 +11,7 @@ Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by upl
 
 ## How it works  
 
-I hope to use the [unfurl api](https://api.slack.com/docs/message-link-unfurling) to attach the video. Unforunately, that's not possible and Slack only shows [previews](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) from whitelisted apps. The good news is that Twitter is whitelisted. So we can upload a to Twitter and then let Slack unfurl that.
+I hoped to use the [unfurl api](https://api.slack.com/docs/message-link-unfurling) to attach the video. Unforunately, that's not possible and Slack only shows [previews](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) from whitelisted apps. The good news is that Twitter is whitelisted. So we can upload a to Twitter and then let Slack unfurl that.
 
 ![Software Flow Diagram Here](media/flow.svg)
 
@@ -39,4 +39,4 @@ See `.env.sample` for what your `.env` file shoud look like.
 
 ### Hosting  
 
-This could live on Google App Engine or a cloud function. However, the easiest free option is glitch.com.
+I recommend hosting for free on [glitch.com](https://glitch.com/). However, Google App Engine or even a Lambda function should work as well.
