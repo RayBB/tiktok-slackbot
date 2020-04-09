@@ -4,11 +4,12 @@ Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by upl
 <kbd>
   <img src="media/reply.gif">
 </kbd>
-![Slackbot replying to TikTok](media/reply.gif)
 <details>
   <summary>Playing Example</summary>
   
-  ![thread](media/thread.gif)
+  <kbd>
+    <img src="media/thread.gif">
+  </kbd>
 </details>
 
 ## How it works  
