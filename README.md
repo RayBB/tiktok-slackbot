@@ -23,7 +23,7 @@ Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by upl
 
 ## How it works  
 
-I hoped to use the [unfurl api](https://api.slack.com/docs/message-link-unfurling) to attach the video. Unforunately, that's not possible and Slack only shows [previews](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) from whitelisted apps. The good news is that Twitter is whitelisted. So we can upload a to Twitter and then let Slack unfurl that.
+I hoped to use the [unfurl api](https://api.slack.com/docs/message-link-unfurling) to attach the video. Unforunately, that's not possible and Slack only shows [previews](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) from whitelisted apps. The good news is that Twitter is whitelisted. So we can upload a video to Twitter and then let Slack unfurl that.
 
 ![Software Flow Diagram Here](media/flow.svg)
 
@@ -47,7 +47,7 @@ Slack -> TikTok -> Twitter -> Slack
 2. Create a Slackbot (follow instructions in src/slackbot.js) and put the credentials in the `.env` file.  
 3. Run `npm start` 
 4. Add your server address to the **Event Subscriptions** page in Slack. ex: `https://example.com/slack/events`  
-    * Your bot must be running before you an add the URL
+    * Your bot must be running before you can add the URL
     * You can use ngrok for local testing
     * See [Bolt docs](https://api.slack.com/tutorials/hello-world-bolt) for help setting up a Slackbot.
 5. Add the Slackbot to any channel you want it to respond in.
