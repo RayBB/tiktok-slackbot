@@ -1,13 +1,13 @@
 /*
 
-This is a slackbot made in bolt.
+This is a Slackbot made with the Bolt framework.
 
-This works by giving setting up the slackbot as follows.
+The Slackbot requires the following permissions:
 1. App unfurl domains: tiktok.com
 2. Subscribe to bot events: link_shared
 3. Bot Token Scopes: links:read, chat:write
 
-Then add the slackbot to any channel where you would like it to unfurl TikTok links
+Then add the Slackbot to any channel where you would like it to unfurl TikTok links
 It will always reply in a thread. It will reply to messaged that are in a thread
 
 */
