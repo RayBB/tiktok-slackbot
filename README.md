@@ -1,7 +1,9 @@
 # TikTok to Twitter Slackbot
 
 Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by uploading TikToks to Twitter and then posting the Tweets back in a Slack thread.
-
+<kbd>
+  <img src="media/reply.gif">
+</kbd>
 ![Slackbot replying to TikTok](media/reply.gif)
 <details>
   <summary>Playing Example</summary>
