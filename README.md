@@ -1,11 +1,15 @@
 # TikTok to Twitter Slackbot
 
-Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by uploading TikToks to Twitter and then posting the Tweets back in a Slack thread.
+Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by uploading TikToks to Twitter and then posting the Tweets back in a Slack thread.  
+
+---
+ 1~ Slackbot replies to post:
 <kbd>
   <img src="media/reply.gif">
 </kbd>
+
 <details>
-  <summary>Playing Example</summary>
+  <summary>2~ You watch TikTok</summary>
   
   <kbd>
     <img src="media/thread.gif">
@@ -22,6 +26,9 @@ Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by upl
 I hoped to use the [unfurl api](https://api.slack.com/docs/message-link-unfurling) to attach the video. Unforunately, that's not possible and Slack only shows [previews](https://slack.com/help/articles/204399343-Share-links-and-set-preview-preferences) from whitelisted apps. The good news is that Twitter is whitelisted. So we can upload a to Twitter and then let Slack unfurl that.
 
 ![Software Flow Diagram Here](media/flow.svg)
+
+
+I decided not to upload the MP4 directly to Slack because that would hog your Slack storage and litter the files search.
 
 ### General Flow:  
 Slack -> TikTok -> Twitter -> Slack
