@@ -1,0 +1,23 @@
+{
+  "name": "tiktok-to-twitter",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@slack/bolt": "^1.8.0",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.0",
+    "read-chunk": "^3.2.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/slackbot.js"
+  },
+  "author": "RayBB",
+  "license": "MIT"
+}
