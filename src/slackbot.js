@@ -22,13 +22,15 @@ const app = new App({
   token: process.env.SLACK_BOT_TOKEN
 });
 
+let seenMessages = new Set();
 
 app.event("link_shared", async ({ event, say }) => {
   console.log("LINK SHARED");
   console.log(event);
+  if (seenRecently(event.message_ts)) return
 
   let twitterPromises = [];
-  for (let item of event.links){
+  for (let item of event.links) {
     const pendingTweet = tok_to_tweet.getTwitterUrl(item['url']);
     twitterPromises.push(pendingTweet);
   }
@@ -37,7 +39,7 @@ app.event("link_shared", async ({ event, say }) => {
   // Reply in a thread by default
   let timeStamp = event.message_ts;
   // if the message came from a thread (has thread_ts), respond to parent message
-  if ('thread_ts' in event){
+  if ('thread_ts' in event) {
     console.log("found thread_ts");
     timeStamp = event.thread_ts;
   }
@@ -49,6 +51,18 @@ app.event("link_shared", async ({ event, say }) => {
     thread_ts: timeStamp,
   })
 });
+
+function seenRecently(timeStamp) {
+  /*
+  This is to prevent issues with double posting messages when the app cold starts and slack does a retry
+  */
+  if (seenMessages.has(timeStamp)) return true;
+
+  seenMessages.add(timeStamp);
+  // Remove timestamp from set in 5 minutes
+  setTimeout(() => seenMessages.delete(timeStamp), 5000 * 60);
+  return false;
+}
 
 // Start your app
 (async () => {
