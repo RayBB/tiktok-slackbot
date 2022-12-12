@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@slack/bolt": "^1.8.0",
+    "@slack/bolt": "^3.12.2",
     "axios": "^0.21.2",
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.0",
