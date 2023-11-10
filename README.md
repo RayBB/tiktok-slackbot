@@ -1,3 +1,7 @@
+> [!WARNING]  
+> I slapped this togther at the peak of the TikTok hype. Now, at the end of 2023, I haven't used it in quite a while and don't know if it works.
+> I don't plan to work on this anymore (busy with my master thesis) so I'll archive the repo. Feel free to fork it and use as you wish.
+
 # TikTok to Twitter Slackbot
 
 Wish you could watch TikToks in Slack? Me too. I made a Slackbot fix that by uploading TikToks to Twitter and then posting the Tweets back in a Slack thread.  
